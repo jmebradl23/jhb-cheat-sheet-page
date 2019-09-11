@@ -1,0 +1,64 @@
+.question h4:hover {
+    cursor: pointer;
+}
+
+.answer .card-body {
+    flex: 1;
+}
+
+ul {
+    padding: 0;
+    background-color: lightgray;
+    margin: 10px 0;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+ol li {
+  list-style: disc;
+}
+
+.compare li {
+    list-style: none;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+.compare-item::before {
+  background-size: 100%;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    content:"";
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.angular::before {
+  background-image: url('https://angular.io/assets/images/logos/angular/angular.png');
+}
+
+.react::before {
+  background-image: url('https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png');
+}
+
+  ul {
+    background-color: lightgray;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+      background-color: red;
+    }
+  }

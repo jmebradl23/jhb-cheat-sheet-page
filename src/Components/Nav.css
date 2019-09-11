@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: lightblue;
+    background: lightgray;
     color: white;
 }
 
@@ -13,4 +13,13 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
+}
+
+ul.nav-links {
+    background-color: lightgray;
+    margin-bottom: 0;
+}
+
+.Nav p {
+    margin-bottom: 0;
 }
