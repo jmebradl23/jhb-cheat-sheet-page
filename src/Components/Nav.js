@@ -9,14 +9,6 @@ function Nav() {
           <Link to='/'>
               <p>Home</p>
           </Link>
-          <ul className="nav-links">
-            <Link to='/definitions'>
-                  <li>Definitions</li>
-              </Link>
-              <Link to='/questions'>
-                  <li>Questions</li>
-              </Link>
-          </ul>
       </div>
     );
   }

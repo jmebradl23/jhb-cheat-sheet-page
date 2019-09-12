@@ -8,19 +8,19 @@ function Definitions() {
             word: "ADA Compliance",
             definition: "The Americans with Disabilities Act (also known as ADA) is a comprehensive civil rights law that was enacted to protect individuals with disabilities from discrimination. Title III of the ADA mandates that all “places of public accommodation” (all business open to the public) are legally required to remove any “access barriers” that would hinder a disabled person’s access to that business’s goods or services. Guidelines for ADA Compliance can be found via the <a href='../definition/w3c-web-content-accessibility-guidelines'>World Wide Web Consortium’s (W3C) Web Content Accessibility Guidelines (WCAG 2.0 AA)</a> or directly accessed at <a href='https://www.w3.org/WAI/standards-guidelines/wcag/'>wc3 guidelines</a>.",
             images: [{
-                imgSrc: '../img/ada1.png',
+                imgSrc: '../img/definitions/ada1.png',
                 imgSize: 'xlarge',
                 text: '',
                 imgAlt: 'Ada compliance points 1'
             },
             {
-                imgSrc: '../img/ada2.png',
+                imgSrc: '../img/definitions/ada2.png',
                 imgSize: 'xlarge',
                 text: '',
                 imgAlt: 'Ada compliance points 2'
             },
             {
-                imgSrc: '../img/ada3.png',
+                imgSrc: '../img/definitions/ada3.png',
                 imgSize: 'xlarge',
                 text: '',
                 imgAlt: 'Ada compliance points 3'
@@ -35,7 +35,7 @@ function Definitions() {
             word: "Application Layers",
             definition: "(Can also be called application tiers) The three or more layers that make up an application, generally consiting of the <a href='../definition/presentationLayer'>Presentation layer</a>, the <a href='../definition/businessLayer'>Business layer</a> and the <a href='../definition/dataLayer'>Data layer</a>.",
             images: [{
-                imgSrc: '../img/applicationlayers.jpg',
+                imgSrc: '../img/definitions/applicationlayers.jpg',
                 imgSize: 'large',
                 text: 'In the example below, this sample app is broken down into more than three layers, consisting of the usual three plus a Service layer and a Persistent layer.',
                 imgAlt: 'Application Layer'
@@ -45,7 +45,7 @@ function Definitions() {
             word: "Bubbles Up",
             definition: "Event bubbling directs an event to its intended target, it works like so:<br>A button is clicked and the event is directed to the button.<br>If an event handler is set for that object, the event is triggered.<br>If no event handler is set for that object, the event bubbles up (like a bubble in water) to the objects parent.",
             images: [{
-                imgSrc: '../img/bubblingup.png',
+                imgSrc: '../img/definitions/bubblingup.png',
                 imgSize: 'large',
                 text: "Basically, the event bubbles up from parent to parent until it is handled, or until it reaches the document object.",
                 imgAlt: 'Bubbling'}]
@@ -59,7 +59,7 @@ function Definitions() {
             word: "Business Logic",
             definition: "The part of the program which encodes the real-world business rules that determine how data can be created, displayed, stored, and changed. It prescribes how business objects interact with one another, and enforces the routes and the methods by which business objects are accessed and updated.<br><br>In the <a href='../definition/businessLayer'>Business layer</a> of an application, data is aggregated and then sent on to either the <a href='../definition/presentationLayer'>Presentation layer</a> or the <a href='../definition/databaseLayer'>Database layer</a>. It could include, organizing and manipulating data, validating user ability to request/manipulate data, verify if data is valid, and/or possibly cache data for performance.",
             images: [{
-                imgSrc: '../img/businessRules.jpg',
+                imgSrc: '../img/definitions/businessRules.jpg',
                 imgSize: 'large',
                 text: "For example, it would take the user's input and manipulate it so it conforms to the company's <a href='../definition/businessRules'>business rules</a>",
                 imgAlt: 'Business rules'
@@ -69,7 +69,7 @@ function Definitions() {
             word: "Business Rules",
             definition: "Describes the operations, definitions and constraints that apply to an organization. The operations collectively form a process; every business uses these processes to form systems that get things done.",
             images: [{
-                imgSrc: '../img/businessRules.jpg',
+                imgSrc: '../img/definitions/businessRules.jpg',
                 imgSize: 'large',
                 text: "For example, the <a href='../definition/businessLogic'>business logic</a> would take the user's input and manipulate it so it conforms to the company's business rules.",
                 imgAlt: 'Business rules'
@@ -79,7 +79,7 @@ function Definitions() {
             word: "Closure",
             definition: "Basically, a function inside another function. An inner function that has access to it's encompasing (outer) function's variables. A closure has 3 scope chains:<br><ul><li>It's own scope (variables defined between its curly brackets)</li><li>The outer function’s scope. (variables defined in it's encompasing function)</li><li>The global scope.</li></ul>",
             images: [{
-                imgSrc: '../img/closure.jpg',
+                imgSrc: '../img/definitions/closure.jpg',
                 imgSize: 'medium',
                 text: 'With closures, the inner function still has access to the outer function’s variables even after the outer function has returned. When functions in JavaScript execute, they use the same scope chain that was in effect when they were created. This means that even after the outer function has returned, the inner function still has access to the outer function’s variables.',
                 imgAlt: 'Closure'
@@ -99,13 +99,13 @@ function Definitions() {
             word: "Dependency Injection",
             definition: "Technique whereby one object (or static method) supplies the dependencies of another object. When class A uses some functionality of class B, then its said that class A has a dependency of class B. But before methods of other classes can be used, we first need to create the object of that class (i.e. class A needs to create an instance of class B).",
             images: [{
-                imgSrc: '../img/dependencyInjection.jpg',
+                imgSrc: '../img/definitions/dependencyInjection.jpg',
                 imgSize: 'large',
                 text: 'Before dependency injection can be fulfilled, there needs to be a creation of the object that contains the methods and variables needed.',
                 imgAlt: 'Dependency Injection'
             },
             {
-                imgSrc: '../img/dependencyInjection2.jpg',
+                imgSrc: '../img/definitions/dependencyInjection2.jpg',
                 imgSize: 'large',
                 text: "Let’s say we have a car class which contains various objects such as wheels, engine, etc. Here the car class is responsible for creating all the dependency objects. Now, what if we decide to ditch MRFWheels in the future and want to use Yokohama Wheels? We will need to recreate the car object with a new Yokohama dependency. But when using dependency injection (DI), we can change the Wheels at runtime (because dependencies can be injected at runtime rather than at compile time). You can think of DI as the middleman in our code who does all the work of creating the preferred wheels object and providing it to the Car class. It makes our Car class independent from creating the objects of Wheels, Battery, etc.",
                 imgAlt: 'Dep Injection 2'
@@ -115,7 +115,7 @@ function Definitions() {
             word: "Document (Object)",
             definition: "The document object (document) represents the HTML that is displayed in a browser window. The document object has methods and properties it can use to get access to and modify the document (html) content. The way a document content is accessed and modified is called the Document Object Model, or <a href='../definition/dom'>DOM</a>. The document object is the root node of the HTML document.",
             images: [{
-                imgSrc:'../img/dom2.jpg',
+                imgSrc:'../img/definitions/dom2.jpg',
                 imgSize: 'large',
                 text: 'The following properties and methods can be used on HTML documents:',
                 imgAlt: 'dom'
@@ -125,7 +125,7 @@ function Definitions() {
             word: "DOM (Document Object Model)",
             definition: "The DOM represents the document as nodes and objects, and is a way the document's content is accessed and modified. ",
             images: [{
-                imgSrc:'../img/dom.jpg',
+                imgSrc:'../img/definitions/dom.jpg',
                 imgSize: 'large',
                 text: '<ul><li><b>Window object</b> − Top of the hierarchy. It is the outmost element of the object hierarchy.</li><li><b>Document object</b> − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page. Each child of the document is considered a <a href="../definition/node">node</a>. </li><li><b>Form object</b> − Everything enclosed in the &lt;form>...&lt;/form> tags sets the form object.</li><li><b>Form control elements</b> − The form object contains all the elements defined for that object such as text fields, buttons, radio buttons, and checkboxes.</li></ul>',
                 imgAlt: 'dom'
@@ -145,7 +145,7 @@ function Definitions() {
             word: "Entry Point",
             definition: "An application's entry point is the resource (module, file, function, etc) that is the access point to the application. Generally, the resource is where the code begins - or first module of code. Entry points are generally used to control user's access to different versions of the application.",
             images: [{
-                imgSrc: '../img/dependency-graph.jpg',
+                imgSrc: '../img/definitions/dependency-graph.jpg',
                 imgSize: 'xlarge',
                 text: ' In webpack, there are files specified as entry points. These entry points are at the top of the dependency graph below. Any files required or imported from the entry files will be processed and bundled by webpack.',
                 imgAlt: 'Entry point dependency graph'
@@ -155,12 +155,12 @@ function Definitions() {
             word: "Event Delegation",
             definition: "The idea of listening for a event on an element (that contanes multiple child elements) that is in the HTML on load, as opposed to adding event listeners to numerous elements and ones that may not be there after the page is loaded.",
             images: [{
-                imgSrc: '../img/eventDelegation1.jpg',
+                imgSrc: '../img/definitions/eventDelegation1.jpg',
                 imgSize: 'small',
                 text: 'We should NOT assign multiple event listeners to all the "li" elements as all of them may not be listed in the DOM on page load. Additionally, Assigning multiple event listeners is more costly as opposed to only adding one.',
                 imgAlt: 'Event Delegation1'
             },
-            {imgSrc: '../img/eventDelegation2.jpg',
+            {imgSrc: '../img/definitions/eventDelegation2.jpg',
             imgSize: 'large',
             text: 'So instead of assigning multiple event listeners on all the child "li" elements, we only assign one event listener to the parent "ul" element and then use "target" and "nodeName" to find which element was clicked.',
             imgAlt: 'Event Delegation1'}
@@ -170,7 +170,7 @@ function Definitions() {
             word: "Function Declaration",
             definition: "Type of function declaration that does not have variable assignment. These occur as standalone constructs and cannot be nested within non-function blocks. These types of functions are not to be used as an <a href='../definition/iife'>IIFE</a>",
             images: [{
-                imgSrc: '../img/functionDeclaration.jpg',
+                imgSrc: '../img/definitions/functionDeclaration.jpg',
                 imgSize: 'large',
                 text: 'Types of function declaration.',
                 imgAlt: 'Function Declaration'
@@ -180,7 +180,7 @@ function Definitions() {
             word: "Function Expression",
             definition: "Type of function declaration that as part of a larger expression syntax. (typically a variable assignment). These types of functions can be used as an <a href='../definition/iife'>IIFE</a>",
             images: [{
-                imgSrc: '../img/functionExpression.jpg',
+                imgSrc: '../img/definitions/functionExpression.jpg',
                 imgSize: 'medium',
                 text: 'Types of function expressions.',
                 imgAlt: 'Function Expression'
@@ -190,13 +190,13 @@ function Definitions() {
             word: "Garbage Collection",
             definition: "A form of automatic memory management. The garbage collector, or collector, attempts to reclaim garbage, or memory occupied by objects that are no longer in use by the program.",
             images: [{
-                imgSrc: '../img/gc1.jpg',
+                imgSrc: '../img/definitions/gc1.jpg',
                 imgSize: 'medium',
                 text: 'In the below image the arrow depicts an object reference. The global variable "user" references the object {name: "John"} (we’ll call it John for brevity). The "name" property of John stores a primitive, so it’s painted inside the object.',
                 imgAlt: 'Garbage Collection 1'
             },
             {
-                imgSrc: '../img/gc2.jpg',
+                imgSrc: '../img/definitions/gc2.jpg',
                 imgSize: 'small',
                 text: "If the value of user is overwritten, the reference is lost. Now John becomes unreachable. There’s no way to access it, no references to it. Garbage collector will junk the data and free the memory.",
                 imgAlt: 'Garbage Collection 2'
@@ -221,7 +221,7 @@ function Definitions() {
             word: "Map",
             definition: "An object that holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. They are designed as an alternative to using Object literals for storing key/value pairs that require unique keys, and provide very useful methods for iteration.",
             images: [{
-                imgSrc: '../img/mapExample.jpg',
+                imgSrc: '../img/definitions/mapExample.jpg',
                 imgSize: 'medium',
                 text: `To create a Map object use the 'new' keyword. 
                 <ul>Methods
@@ -247,7 +247,7 @@ function Definitions() {
             word: "(DOM) Nodes",
             definition: "Everything in an HTML document is a node:<br><ul><li>The entire document is a document node</li><li>Every HTML element is an element node</li><li>The text inside HTML elements are text nodes</li><li>Every HTML attribute is an attribute node (deprecated)</li><li>All comments are comment nodes</li></ul>",
             images: [{
-                imgSrc: '../img/node.png',
+                imgSrc: '../img/definitions/node.png',
                 imgSize: 'medium',
                 text: 'With the HTML DOM, all nodes in the node tree can be accessed by JavaScript.<br>New nodes can be created, and all nodes can be modified or deleted.',
                 imgAlt: 'Node'
@@ -292,7 +292,7 @@ function Definitions() {
             word: "WeakMap",
             definition: "A collection of key/value pairs in which the keys are objects only and the values can be arbitrary values. The object references in the keys are held weakly, meaning that they are a target of garbage collection (GC) if there is no other reference to the object anymore.<br><b>Note</b>: One difference to Map objects is that WeakMap keys are not enumerable (i.e., there is no method giving you a list of the keys).",
             images: [{
-                imgSrc: '../img/weakMapExample.jpg',
+                imgSrc: '../img/definitions/weakMapExample.jpg',
                 imgSize: 'large',
                 text: `Since WeakMaps references in the keys are held weakly, if an object they're referenced to is deleted or no longer has a reference, then the WeakMap will be <a href='../definition/gargabeCollected'>Garbage Collected</a>. Otherwise, except for ennumerable cases, WeakMaps have the same properties as <a href='../definition/map'>Map</a>.`,
                 imgAlt: 'Weak Map example'
@@ -310,20 +310,7 @@ function Definitions() {
             <h2 className="text-center"><u>Definitions</u></h2>
             {definitionList.map((value, index) => {
                 return <DefinitionDetails data={value} />
-                // return <li key={index}>{value}</li>
             })}
-            {/* <div>
-                <h4>Word</h4>
-                <p>Definition</p>
-                <div className="card">
-                    <div className="card-body">
-                        <p>Image text</p>
-                        <div className="def-img imageSize">
-                            Image
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 }

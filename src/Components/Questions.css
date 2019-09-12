@@ -6,13 +6,13 @@
     flex: 1;
 }
 
-ul {
+/* ul {
     padding: 0;
     background-color: lightgray;
     margin: 10px 0;
-    /* padding: 10px 15px; */
+    padding: 10px 15px;
     border-radius: 5px;
-}
+} */
 
 li {
   list-style: none;
@@ -50,12 +50,12 @@ html {
   background-image: url('https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png');
 }
 
-  ul {
+  /* ul {
     background-color: lightgray;
     margin: 10px 0;
     padding: 10px 15px;
     border-radius: 5px;
-}
+} */
 
 @media only screen and (max-width: 991px) {
     html {
