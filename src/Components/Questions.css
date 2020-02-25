@@ -14,8 +14,8 @@
     border-radius: 5px;
 } */
 
-li {
-  list-style: none;
+h6 {
+  text-decoration: underline;
 }
 
 ol li {
@@ -48,6 +48,10 @@ html {
 
 .react::before {
   background-image: url('https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png');
+}
+
+.vue::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png')
 }
 
   /* ul {

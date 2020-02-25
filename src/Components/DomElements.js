@@ -125,7 +125,7 @@ function Definitions() {
             title: 'Node Name',
             name: 'Node Name',
             link: 'nodeName',
-            description: `Returns the node name of the element targeted.`,
+            description: `Returns the node name of the element targeted. This will get all type 1 nodes. There are several other types of nodes as well (comment, attribute, text, etc.). To get the name of any of the various other node types, you can use the nodeName property.`,
             button: true,
             onLoad: ``,
             html: `<div style="border: 1px solid black;" id="nodes-wrapper">
@@ -247,7 +247,7 @@ function Definitions() {
             title: 'Tag Name',
             name: 'Tag Name',
             link: 'tag-name',
-            description: "A Node method that returns the name of the tag of the node.<br>Note: all results will be capitalized.",
+            description: "A Node method that returns the name of the tag of the node. The tagName property is meant specifically for element nodes (type 1 nodes) to get the type of element.<br>Note: all results will be capitalized.",
             button: true,
             onLoad: ``,
             html: `<div class="wrapper">Result is: <div id="result" class="mb-20" style="min-height: 24px;"></div><div></div></div>`,

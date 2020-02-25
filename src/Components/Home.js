@@ -18,6 +18,9 @@ function Home() {
                 <Link to='/css'>
                     <li>CSS</li>
                 </Link>
+                <Link to='/resume'>
+                    <li>Resume</li>
+                </Link>
             </ul>
         </div>
 
