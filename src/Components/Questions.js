@@ -167,6 +167,42 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="lookingFor">
+							<h4>What are you looking for in your next role?</h4>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="lookingFor">
+						<Card.Body>
+							<p>First and foremost, I’m looking for a full-time role at a company where I can grow as a developer - honing my front end skills (Javascript, CSS, React, Angular), and also while learning new technologies and languages (Java, Python, D3, etc.).</p><p>I’m also looking to work with a company that’s transparent and that values communication between teams and team members.</p><p>I also want to find a team that values growth and helps everyone on that team to do the best they can, possibly through code reviews, open communication and feedback. I want to be with team members who not only give feedback but are also open to receiving it.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="strength">
+							<h4>What is your best strength?</h4>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="strength">
+						<Card.Body>
+							<p>To be able to remain calm. When there is an error in my code, and have the ability to step back, investigate and determine step by step what went wrong and how to fix it - without going crazy or getting upset.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="crudDifferences">
+							<h4>Explain CRUD operations and the differences of each? Get, Push, Post and Delete.</h4>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="crudDifferences">
+						<Card.Body>
+							<p><u>The HTTP GET method:</u> Used to read(retrieve) a representation of a resource. If successful, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).</p><p><u>The POST verb:</u> Most-often utilized to create a new resource. When creating a new resource, POST takes care of assigning an ID to the resource. On successful creation, return HTTP status 201, returning a Location header with a link to the newly-created resource with the 201 HTTP status.</p><p><u>PUT:</u> most-often utilized for update capabilities, PUT-ing to a known resource URI with the request body containing the newly-updated representation of the original resource. On successful update, return 200 (or 204 if not returning any content in the body) from a PUT.</p><p><u>DELETE:</u> Is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation of the deleted item. Either that or return HTTP status 204 (NO CONTENT) with no response body.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
 			</Accordion>
 		</div>
 	);
