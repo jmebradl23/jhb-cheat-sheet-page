@@ -1,8 +1,8 @@
 import React from 'react';
-import './Questions.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './Questions.css';
 
 function Questions() {
 	return (
@@ -10,8 +10,20 @@ function Questions() {
 			<Accordion>
 				<Card>
 					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="workingOn">
+							<h5>Tell me about something you've been working on lately?</h5>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="workingOn">
+						<Card.Body>
+							<p>Answer goes here.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="react-angular">
-							<h4>How are Angular, React and Vue different?</h4>
+							<h5>How are Angular, React and Vue different?</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="react-angular">
@@ -144,7 +156,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="challenge">
-							<h4>Site a challenge you faced and tell how you resolved it?</h4>
+							<h5>Site a challenge you faced and tell how you resolved it?</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="challenge">
@@ -170,7 +182,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="lookingFor">
-							<h4>What are you looking for in your next role?</h4>
+							<h5>What are you looking for in your next role?</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="lookingFor">
@@ -182,7 +194,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="strength">
-							<h4>What is your best strength?</h4>
+							<h5>What is your best strength?</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="strength">
@@ -194,12 +206,24 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="crudDifferences">
-							<h4>Explain CRUD operations and the differences of each? Get, Push, Post and Delete.</h4>
+							<h5>Explain CRUD operations and the differences of each? Get, Push, Post and Delete.</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="crudDifferences">
 						<Card.Body>
 							<p><u>The HTTP GET method:</u> Used to read(retrieve) a representation of a resource. If successful, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).</p><p><u>The POST verb:</u> Most-often utilized to create a new resource. When creating a new resource, POST takes care of assigning an ID to the resource. On successful creation, return HTTP status 201, returning a Location header with a link to the newly-created resource with the 201 HTTP status.</p><p><u>PUT:</u> most-often utilized for update capabilities, PUT-ing to a known resource URI with the request body containing the newly-updated representation of the original resource. On successful update, return 200 (or 204 if not returning any content in the body) from a PUT.</p><p><u>DELETE:</u> Is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation of the deleted item. Either that or return HTTP status 204 (NO CONTENT) with no response body.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="updates">
+							<h5>How do you keep up with rapid improvements/updates to technologies?</h5>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="updates">
+						<Card.Body>
+							<p>Read the documentation. There should be updates to the docs when improvements of tools and frameworks are made. Additionally, I’ve found that there are constantly new videos, articles and books about the newest technologies and the improvements to each. And lastly, whenever I come across an error, I usually get on stackoverflow and there’s usually a solution to my issue there if i’m not 100% up on the latest version of the tool or framework.</p>
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>

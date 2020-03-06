@@ -2,20 +2,48 @@
     cursor: pointer;
 }
 
+.Questions .card {
+  border: none;
+  padding: 1px 0 1px 5px;
+  margin: 20px 0;
+}
+
+.collapse {
+  background-color: rgba(0,0,0,.07);
+}
+
 .answer .card-body {
     flex: 1;
 }
 
-/* ul {
-    padding: 0;
-    background-color: lightgray;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-} */
+.card-header {
+  padding: 0;
+  background-color: rgba(0,0,0,.07);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.accordion>.card:not(:first-of-type) .card-header:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.collapse {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-link {
+  width: 100%;
+  text-align: left;
+}
 
 h6 {
   text-decoration: underline;
+}
+
+h5 {
+  margin-bottom: 0;
 }
 
 ol li {
@@ -53,16 +81,3 @@ html {
 .vue::before {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png')
 }
-
-  /* ul {
-    background-color: lightgray;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-} */
-
-@media only screen and (max-width: 991px) {
-    html {
-      background-color: red;
-    }
-  }
