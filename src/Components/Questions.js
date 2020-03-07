@@ -10,13 +10,58 @@ function Questions() {
 			<Accordion>
 				<Card>
 					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="aboutYourself">
+							<h5>Tell me about yourself?</h5>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="aboutYourself">
+						<Card.Body>
+						I got interested in web development while working with the IT departemnt at a music company. I started to study Javascript on my own and eventually took General Assebmly’s web development immersive course in 2015. That’s where I learned front and backend technologies while studying Javascript, Node and Ruby on Rails, while building my first three projects from the ground up. Since graduating in June of 2015, I’ve had numerous contract positions focusing mostly on the front end. Most of them while using plain Javascript, HTML and CSS and another while using Angular and yet another working a bit with Vue. During that time, I’ve also taught myself Vue and React as I like to keep up with new technologies. So now I've been with Naked Wines for a while working on front-end optimization for internal tools for customer-facing deparments as well as assisting with Marketing's weekly promos and sales, and putting out fires with legal as they come out throughout the year.
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="workingOn">
 							<h5>Tell me about something you've been working on lately?</h5>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="workingOn">
 						<Card.Body>
-							<p>Answer goes here.</p>
+							<o>The company recently switched shipping carriers from FedEx to UPS. So this meant that we needed to incorporate the functionality we had using FedEx API and transfer that functionality to be used with UPS API. So this whole process took a number of steps to carry out:</o>
+							<ol>
+								<li><u>Familiarize with technology:</u> First I had to go through the documentation of UPS API and familiarize myself with their data and endpoints. What type of data can be returned. </li>
+								<li><u>Gather requirements:</u> Gather requirements included team meetings with customer-facing departments (CS, Shipping, Marketing) and understanding what the vision is - what is required and what is recommended and suggested. Any changes that are necessary with this new carrier/API as well as any stories that will help with understanding what is needed.</li>
+								<li><u>Solve / work through problems:</u> Come up with ideas how to add new functionality or how to proceed with implementation (meetings with other developers), includes exchanging and discussing ideas, best solutions, etc.</li>
+								<li><u>Plan:</u> Pretty straight forward. I take the time to plan out the project. Plan out the steps need to take in order to execute project.</li>
+								<li><u>Implement:</u> Actually write out the code for the project</li>
+								<li><u>Test</u> Test out code with stories provided in gather requirements process. Writing test cases to see if code satisfies requirements. Pass on to other departments to test if necessary.</li>
+								<li><u>Push:</u> Push to testing, development and/or production enviroments.</li>
+								<li><u>Manage feedback / Respond to QA:</u> Generally feedback and QA will come from other departments, so hopfully there is a bug tracking system in use. I generally have been using Jira. At that point, prioritization comes into play to attack bugs of highest priority first. </li>
+							</ol>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="prioritize">
+							<h5>How do you prioritize your work?</h5>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="prioritize">
+						<Card.Body>
+							<p>I prioritize by the following:</p>
+							<ol>
+								<li>Legal: Are there legal complications that may arise if this work isn’t completed asap?</li>
+								<li>Impact: How much impact will this project have on the company/users?
+									<ul>
+										<li>Is this preventing sales?</li>
+										<li>Is this preventing users from using the site?</li>
+									</ul>
+								</li>
+								<li>Scoring system: Does company have a scoring system in place? -If so, tackle highest priority first, down to least</li>
+							</ol>
+							<p>As always, when new bugs arise, they need to be prioritized using the list above.</p>
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
