@@ -3,6 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './Questions.css';
+import MixinImg from '../img/mixins.jpg';
 
 function Questions() {
 	return (
@@ -269,6 +270,27 @@ function Questions() {
 					<Accordion.Collapse eventKey="updates">
 						<Card.Body>
 							<p>Read the documentation. There should be updates to the docs when improvements of tools and frameworks are made. Additionally, I’ve found that there are constantly new videos, articles and books about the newest technologies and the improvements to each. And lastly, whenever I come across an error, I usually get on stackoverflow and there’s usually a solution to my issue there if i’m not 100% up on the latest version of the tool or framework.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="updates">
+							<h5>What is a CSS Pre-Processor?</h5>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="updates">
+						<Card.Body>
+							<p>Pre-processors give you more functionality as a means of writing cleaner and more intelligent CSS.</p>
+							<ul>
+								<li><b>Use of variables</b>: Instead of changing multiple lines in your code if you want to change a style, you can simply change one variable to update all those properties.</li>
+								<li><b>Imports</b>: All css files that you create can be collected and outputted as 1 single file that needs to be downloaded from the server. And as we all know, 1 request is better than multiple requests.</li>
+								<li><b>Nesting</b>: A way of writing cleaner code by creating compound selectors within other selectors. It helps you better see the relation between elements, is faster and makes more sense with HTML.</li>
+								<li><b>Mixins</b>: Reusable blocks of code for CSS that allows the use of arguments to create styling. Example:</li>
+								<div className="def-img medium">
+                                	<img src={MixinImg} alt='what a mixin is' />
+                           		 </div>
+							</ul>
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
