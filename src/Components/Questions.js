@@ -286,10 +286,13 @@ function Questions() {
 								<li><b>Use of variables</b>: Instead of changing multiple lines in your code if you want to change a style, you can simply change one variable to update all those properties.</li>
 								<li><b>Imports</b>: All css files that you create can be collected and outputted as 1 single file that needs to be downloaded from the server. And as we all know, 1 request is better than multiple requests.</li>
 								<li><b>Nesting</b>: A way of writing cleaner code by creating compound selectors within other selectors. It helps you better see the relation between elements, is faster and makes more sense with HTML.</li>
-								<li><b>Mixins</b>: Reusable blocks of code for CSS that allows the use of arguments to create styling. Example:</li>
-								<div className="def-img medium">
-                                	<img src={MixinImg} alt='what a mixin is' />
-                           		 </div>
+								<li><b>Mixins</b>: Reusable blocks of code for CSS that allows the use of arguments to create styling. Example:
+									<div className="def-img medium">
+										<img src={MixinImg} alt='what a mixin is' />
+									</div>
+								</li>
+								<li><b>Functions</b>: Allow you to do quick little tricks like lightening color by a percentage.</li>
+								<li><b>Math</b>: Math equations can be used. Simple equations like figuring out margins or changing colors.</li>
 							</ul>
 						</Card.Body>
 					</Accordion.Collapse>
