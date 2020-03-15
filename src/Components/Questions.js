@@ -4,15 +4,17 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './Questions.css';
 import MixinImg from '../img/mixins.jpg';
+import eDImg from '../img/eventDelegationImg.jpg';
 
 function Questions() {
 	return (
 		<div className="Questions">
 			<Accordion>
+				<h4><u>Intro/Getting to know you</u></h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="aboutYourself">
-							<h5>Tell me about yourself?</h5>
+							<p class="question-title">Tell me about yourself?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="aboutYourself">
@@ -24,7 +26,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="workingOn">
-							<h5>Tell me about something you've been working on lately?</h5>
+							<p class="question-title">Tell me about something you've been working on lately?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="workingOn">
@@ -46,7 +48,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="prioritize">
-							<h5>How do you prioritize your work?</h5>
+							<p class="question-title">How do you prioritize your work?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="prioritize">
@@ -68,8 +70,59 @@ function Questions() {
 				</Card>
 				<Card>
 					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="challenge">
+							<p class="question-title">Site a challenge you faced and tell how you resolved it?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="challenge">
+						<Card.Body>
+							<ul>
+								<li>When I was working on my first Angular.js application one of the tasks that was assigned to me was creating a dropdown menu in the user's dashboard. Simple, right? Well I thought so too, until I came upon a little problem. The dropdown menu was able to open and the user was able to select an option, but when it came to closing the dropdown menu, it wouldn't collapse back down. I clicked outside the menu. Nothing. I clicked the top of the menu to collapse it.  Nothing. So, my steps to revolve the issue were as follows:</li>
+								<ol>
+									<li>Check the console to see if there were any errors. No errors were listed there.</li>
+									<li>Check my markup to make sure it was correct. Check for missing closing tags, class misspellings, etc. Everything looked correct and there were no errors indicated in my code editor.</li>
+									<li>Compare my component structure with the Bootstrap example and/or the instructions on Bootstrap's component creation page. Everything checked out.</li>
+									<li>Search online for an answer. (googling issue, checking stackoverflow, etc.)</li>
+									<li>When still an answer didn't present itself, I asked my manager for advice. I told him all that I had done and he told me they were using a previous version of Bootstrap and to check the docs for that particular version.</li>
+									<li>I looked in the app's configuaration and sure enough they were using a pervious version. So I found the docs for that specific version and started searching for the dropdown issue.</li>
+									<li>I eventually found that there was an issue that was reported to Bootstrap with the dropdown component but that Bootstrap put in a fix for it in the next version. So, since we were set on using the previous version we were unable to resolve the issue with Bootstrap.</li>
+									<li>So I started to search online for an answer and included the Bootstrap version we were using with my search. I found a couple answers that were posted that presented a fix using jQuery, but wasn't sure if I should follow those examples because I knew my manager was a stickler for doing things the right way - and this fix was kinda hacky. Since this solution had the potential of screwing up how Angular manipulated the DOM I thought my manager would not approve.</li>
+									<li>But I presented him with the jquery answers answers, and sure enough he rejected them saying it would be too risky of a fix and to keep searching.</li>
+									<li>Basically, I was able to find a solution without using jQuery, and which my manager approved and was able to implement it into the code by writing a custom directive. (I can't remember exactly how we did it but, I believe it was by wrapping the component in an parent element and then using Angular to reset the dropdown and update the option depending on what the user selected, if any change was made.)</li>
+								</ol>
+							</ul>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="lookingFor">
+							<p class="question-title">What are you looking for in your next role?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="lookingFor">
+						<Card.Body>
+							<p>First and foremost, I’m looking for a full-time role at a company where I can grow as a developer - honing my front end skills (Javascript, CSS, React, Angular), and also while learning new technologies and languages (Java, Python, D3, etc.).</p><p>I’m also looking to work with a company that’s transparent and that values communication between teams and team members.</p><p>I also want to find a team that values growth and helps everyone on that team to do the best they can, possibly through code reviews, open communication and feedback. I want to be with team members who not only give feedback but are also open to receiving it.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="strength">
+							<p class="question-title">What is your best strength?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="strength">
+						<Card.Body>
+							<p>To be able to remain calm. When there is an error in my code, and have the ability to step back, investigate and determine step by step what went wrong and how to fix it - without going crazy or getting upset.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<h4>Frameworks & Libraries</h4>
+				<Card>
+					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="react-angular">
-							<h5>How are Angular, React and Vue different?</h5>
+							<p class="question-title">How are Angular, React and Vue different?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="react-angular">
@@ -201,58 +254,8 @@ function Questions() {
 				</Card>
 				<Card>
 					<Card.Header>
-						<Accordion.Toggle as={Button} variant="link" eventKey="challenge">
-							<h5>Site a challenge you faced and tell how you resolved it?</h5>
-						</Accordion.Toggle>
-					</Card.Header>
-					<Accordion.Collapse eventKey="challenge">
-						<Card.Body>
-							<ul>
-								<li>When I was working on my first Angular.js application one of the tasks that was assigned to me was creating a dropdown menu in the user's dashboard. Simple, right? Well I thought so too, until I came upon a little problem. The dropdown menu was able to open and the user was able to select an option, but when it came to closing the dropdown menu, it wouldn't collapse back down. I clicked outside the menu. Nothing. I clicked the top of the menu to collapse it.  Nothing. So, my steps to revolve the issue were as follows:</li>
-								<ol>
-									<li>Check the console to see if there were any errors. No errors were listed there.</li>
-									<li>Check my markup to make sure it was correct. Check for missing closing tags, class misspellings, etc. Everything looked correct and there were no errors indicated in my code editor.</li>
-									<li>Compare my component structure with the Bootstrap example and/or the instructions on Bootstrap's component creation page. Everything checked out.</li>
-									<li>Search online for an answer. (googling issue, checking stackoverflow, etc.)</li>
-									<li>When still an answer didn't present itself, I asked my manager for advice. I told him all that I had done and he told me they were using a previous version of Bootstrap and to check the docs for that particular version.</li>
-									<li>I looked in the app's configuaration and sure enough they were using a pervious version. So I found the docs for that specific version and started searching for the dropdown issue.</li>
-									<li>I eventually found that there was an issue that was reported to Bootstrap with the dropdown component but that Bootstrap put in a fix for it in the next version. So, since we were set on using the previous version we were unable to resolve the issue with Bootstrap.</li>
-									<li>So I started to search online for an answer and included the Bootstrap version we were using with my search. I found a couple answers that were posted that presented a fix using jQuery, but wasn't sure if I should follow those examples because I knew my manager was a stickler for doing things the right way - and this fix was kinda hacky. Since this solution had the potential of screwing up how Angular manipulated the DOM I thought my manager would not approve.</li>
-									<li>But I presented him with the jquery answers answers, and sure enough he rejected them saying it would be too risky of a fix and to keep searching.</li>
-									<li>Basically, I was able to find a solution without using jQuery, and which my manager approved and was able to implement it into the code by writing a custom directive. (I can't remember exactly how we did it but, I believe it was by wrapping the component in an parent element and then using Angular to reset the dropdown and update the option depending on what the user selected, if any change was made.)</li>
-								</ol>
-							</ul>
-						</Card.Body>
-					</Accordion.Collapse>
-				</Card>
-				<Card>
-					<Card.Header>
-						<Accordion.Toggle as={Button} variant="link" eventKey="lookingFor">
-							<h5>What are you looking for in your next role?</h5>
-						</Accordion.Toggle>
-					</Card.Header>
-					<Accordion.Collapse eventKey="lookingFor">
-						<Card.Body>
-							<p>First and foremost, I’m looking for a full-time role at a company where I can grow as a developer - honing my front end skills (Javascript, CSS, React, Angular), and also while learning new technologies and languages (Java, Python, D3, etc.).</p><p>I’m also looking to work with a company that’s transparent and that values communication between teams and team members.</p><p>I also want to find a team that values growth and helps everyone on that team to do the best they can, possibly through code reviews, open communication and feedback. I want to be with team members who not only give feedback but are also open to receiving it.</p>
-						</Card.Body>
-					</Accordion.Collapse>
-				</Card>
-				<Card>
-					<Card.Header>
-						<Accordion.Toggle as={Button} variant="link" eventKey="strength">
-							<h5>What is your best strength?</h5>
-						</Accordion.Toggle>
-					</Card.Header>
-					<Accordion.Collapse eventKey="strength">
-						<Card.Body>
-							<p>To be able to remain calm. When there is an error in my code, and have the ability to step back, investigate and determine step by step what went wrong and how to fix it - without going crazy or getting upset.</p>
-						</Card.Body>
-					</Accordion.Collapse>
-				</Card>
-				<Card>
-					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="crudDifferences">
-							<h5>Explain CRUD operations and the differences of each? Get, Push, Post and Delete.</h5>
+							<p class="question-title">Explain CRUD operations and the differences of each? Get, Push, Post and Delete.</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="crudDifferences">
@@ -264,7 +267,7 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="updates">
-							<h5>How do you keep up with rapid improvements/updates to technologies?</h5>
+							<p class="question-title">How do you keep up with rapid improvements/updates to technologies?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="updates">
@@ -273,13 +276,14 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
+				<h4>CSS</h4>
 				<Card>
 					<Card.Header>
-						<Accordion.Toggle as={Button} variant="link" eventKey="updates">
-							<h5>What is a CSS Pre-Processor?</h5>
+						<Accordion.Toggle as={Button} variant="link" eventKey="preprocessor">
+							<p class="question-title">What is a CSS Pre-Processor?</p>
 						</Accordion.Toggle>
 					</Card.Header>
-					<Accordion.Collapse eventKey="updates">
+					<Accordion.Collapse eventKey="preprocessor">
 						<Card.Body>
 							<p>Pre-processors give you more functionality as a means of writing cleaner and more intelligent CSS.</p>
 							<ul>
@@ -293,6 +297,66 @@ function Questions() {
 								</li>
 								<li><b>Functions</b>: Allow you to do quick little tricks like lightening color by a percentage.</li>
 								<li><b>Math</b>: Math equations can be used. Simple equations like figuring out margins or changing colors.</li>
+							</ul>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<h4>DOM Manipulation</h4>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="eventDelegation">
+							<p class="question-title">Explain Event Delegation?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="eventDelegation">
+						<Card.Body>
+							<p>Let's say we have a unorganized list and inside that element, we have a dynamic grouping of list items.</p>
+							<div className="def-img small">
+								<img src={eDImg} alt='list items' />
+							</div>
+							<p>We could go through and set an event listener on each one, but that wouldn't be very efficient. Additionally, if any list items get added after the page loads, those elements won't have an event listener attached unless one is assigned on creation which again...isn't very efficient. Event Delegation allows a developer to attach one single event listener to a parent of a collection of elements so that no matter which child element is triggered, the event listener will fire.</p>
+							<p>Additionally, once an event listener is triggered inside of that parent element, the event will bubble up (or possibly capture down depending on your event listener) and therefore trigger any other event listeners up (or down) the DOM until it either reaches the final element or until stopPropagation is called on an event.</p>
+							<p>Finally, you will be able to see exactly which element was triggered by looking at the event's 'target' property. (Not to be confused with currentTarget which is the element the event listener was attached to.)</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="forEachMap">
+							<p class="question-title">What's the difference between .map and forEach?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="forEachMap">
+						<Card.Body>
+							<p>Both are Javascript methods that basically do the same thing - that is, they both run through an array and will do something to each element if certain conitions are met. The difference between the two is that .map will return a new array, but forEach will modify the existing array.</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<h4>Optimization</h4>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="optimization">
+							<p class="question-title">How have you optimized the front end?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="optimization">
+						<Card.Body>
+							<p>There are a number of ways to optimize your codebase. When I was at Levis, there were a few times where some of our landing pages were making a number of external requests to retrieve a number of small product icons - pretty small in size, however the number of requests to grab each image was adding extra time for the page to load. So instead of keeping those numerous requests, we decided to create one file with a collection of sprites that could be downloaded once - thus greatly cutting down the time it took the page to load. Once we had our new file, we then had to go through the code and link each element on the page that had the old image to update it to link to the new file (background-image property) and then focus on the specific sprite (using CSS background-position property).</p>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="optimize">
+							<p class="question-title">What are some ways to optimize your website?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="optimize">
+						<Card.Body>
+							<p>There are a number of ways to optimize your codebase. Some examples are below:</p>
+							<ul>
+								<li><b>Proper CSS Placement</b>: CSS files should be placed at the top of the HTML document to ensure progressive rendering, and therefore  will improve the loading speeds of your website, but it will keep your visitors from waiting on blank screens or seeing a flash of unstyled text while the page is loading.</li>
+								<li><b>Proper JavaScript placement</b>: Javascript files should be placed at the bottom of the HTML document to prevent blocking of the loading process of HTML and CSS elements. Placing these scripts at the bottom will ensure your page and styling is loaded first and that the user will not wait on a blank screen while script files are being retrieved and processed.  Additionally, this will help ensure that the DOM is loaded before any Javascript files are run.</li>
 							</ul>
 						</Card.Body>
 					</Accordion.Collapse>
