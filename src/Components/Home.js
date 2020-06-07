@@ -19,7 +19,7 @@ function Home() {
                     <li>CSS</li>
                 </Link>
                 <Link to='/resume'>
-                    <li>Resume</li>
+                    <li>My Resume</li>
                 </Link>
             </ul>
         </div>

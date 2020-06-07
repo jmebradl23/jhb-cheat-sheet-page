@@ -10,7 +10,7 @@ function Questions() {
 	return (
 		<div className="Questions">
 			<Accordion>
-				<h4><u>Intro/Getting to know you</u></h4>
+				<h4 class="question-category"><u>Intro/Getting to know you</u></h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="aboutYourself">
@@ -118,7 +118,7 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
-				<h4>Frameworks & Libraries</h4>
+				<h4 class="question-category">Frameworks & Libraries</h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="react-angular">
@@ -276,7 +276,7 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
-				<h4>CSS</h4>
+				<h4 class="question-category">CSS</h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="preprocessor">
@@ -301,7 +301,23 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
-				<h4>DOM Manipulation</h4>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="srcSet">
+							<p class="question-title">What's the difference between src and srcset?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="srcSet">
+						<Card.Body>
+							<p>Both are required attributes that specifies the URL (location) of an image. The difference between the two are as follows:</p>
+							<ul>
+								<li><b>src</b>: Attribute for one single image.</li>
+								<li><b>srcset</b>: Allows multiple sized versions of the same image to be used in an image tag. It also allows data to be provided regarding about the size of each image in the list - which allows the browser to make decision on which image to download and use. (Items separated by commas)</li>
+							</ul>
+						</Card.Body>
+					</Accordion.Collapse>
+				</Card>
+				<h4 class="question-category">DOM Manipulation</h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="eventDelegation">
@@ -332,7 +348,7 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
-				<h4>Optimization</h4>
+				<h4 class="question-category">Optimization</h4>
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="optimization">
@@ -357,6 +373,20 @@ function Questions() {
 							<ul>
 								<li><b>Proper CSS Placement</b>: CSS files should be placed at the top of the HTML document to ensure progressive rendering, and therefore  will improve the loading speeds of your website, but it will keep your visitors from waiting on blank screens or seeing a flash of unstyled text while the page is loading.</li>
 								<li><b>Proper JavaScript placement</b>: Javascript files should be placed at the bottom of the HTML document to prevent blocking of the loading process of HTML and CSS elements. Placing these scripts at the bottom will ensure your page and styling is loaded first and that the user will not wait on a blank screen while script files are being retrieved and processed.  Additionally, this will help ensure that the DOM is loaded before any Javascript files are run.</li>
+								<li><b>Defer third party Javascript</b>Wait to execute until after the page is fully rendered. This can be done with the defer keyword (Javascript), or the onLoad method (jQuery).</li>
+								<li><b>Combine files</b>: The less external requests your page has to make the faster it will be able to load. Combining js and css files is a way to reduce the amount of external files referenced in your app.</li>
+								<li><b>Asynchronous CSS loading</b>: When you load CSS files into your HTML document, the default is to load them synchronously. Instead of loading them synchronously and delaying the load time of your application, these (less-critical) CSS files can be loaded asynchronously and not affect the loading of your app to a high degree (they can be applied after your page has been onloaded).</li>
+								<li><b>Lazy Loading</b>: Only load images that are in the viewport first. Load images further down the page as needed or after critical images are loaded.</li>
+								<li><b>HTML picture tag to load responsive images</b>: Use html picture tag to load responsive images as this element has specifications to do the following:
+									<ol>
+										<li>Images render cripsly at different device-pixel-ratios</li>
+										<li>Fluid image use case - images will load depending on size of image in viewport</li>
+										<li>Variable-sized-image use case - making images to be available in multiple resolutions so they scale efficiently</li>
+										<li>Art-direction use case - abaility to crop or alter the content of images.</li>
+										<li>Switching use case - allows ability to send different formats to browsers depending on what formats they support.</li>
+									</ol>
+								</li>
+								<li></li>
 							</ul>
 						</Card.Body>
 					</Accordion.Collapse>

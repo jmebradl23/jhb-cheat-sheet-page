@@ -86,4 +86,9 @@ html {
 .question-title {
   font-size: 16px;
   margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.question-category {
+  padding-left: 2%;
 }
