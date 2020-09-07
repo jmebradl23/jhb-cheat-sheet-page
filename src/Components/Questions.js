@@ -19,7 +19,7 @@ function Questions() {
 					</Card.Header>
 					<Accordion.Collapse eventKey="aboutYourself">
 						<Card.Body>
-						I got interested in web development while working with the IT departemnt at a music company. I started to study Javascript on my own and eventually took General Assebmly’s web development immersive course in 2015. That’s where I learned front and backend technologies while studying Javascript, Node and Ruby on Rails, while building my first three projects from the ground up. Since graduating in June of 2015, I’ve had numerous contract positions focusing mostly on the front end. Most of them while using plain Javascript, HTML and CSS and another while using Angular and yet another working a bit with Vue. During that time, I’ve also taught myself Vue and React as I like to keep up with new technologies. So now I've been with Naked Wines for a while working on front-end optimization for internal tools for customer-facing deparments as well as assisting with Marketing's weekly promos and sales, and putting out fires with legal as they come out throughout the year.
+						I got interested in web development while working on the Catalog team at a music company in the Bay Area. I was workign closely with the IT departemnt while I was there - working on planning functionality, adding to the UI, etc. The work they did intrigued me, so I started to study Javascript on my own and eventually took web development bootcamp in San Francisco in 2015. That’s where I learned front and backend technologies while studying Javascript, Node and Ruby on Rails, while building my first three projects from the ground up. Since graduating in June of 2015, I’ve had numerous contract positions focusing mostly on the front end. Most of them while using plain Javascript, HTML and CSS. One was more focused on working with  Angular and another working a bit with Vue. During the down time, I’ve taught myself other technologies like React, Redux and GraphQL as I like to keep up with new technologies. So now I've been with Naked Wines for a while working on internal tools for customer-facing deparments as well as assisting with Marketing's weekly promos and sales. And now I'm searching for a...
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
@@ -31,7 +31,7 @@ function Questions() {
 					</Card.Header>
 					<Accordion.Collapse eventKey="workingOn">
 						<Card.Body>
-							<o>The company recently switched shipping carriers from FedEx to UPS. So this meant that we needed to incorporate the functionality we had using FedEx API and transfer that functionality to be used with UPS API. So this whole process took a number of steps to carry out:</o>
+							<p>The company recently switched shipping carriers from FedEx to UPS. So this meant that we needed to incorporate the functionality we had using FedEx API and transfer that functionality to be used with UPS API. So this whole process took a number of steps to carry out:</p>
 							<ol>
 								<li><u>Familiarize with technology:</u> First I had to go through the documentation of UPS API and familiarize myself with their data and endpoints. What type of data can be returned. </li>
 								<li><u>Gather requirements:</u> Gather requirements included team meetings with customer-facing departments (CS, Shipping, Marketing) and understanding what the vision is - what is required and what is recommended and suggested. Any changes that are necessary with this new carrier/API as well as any stories that will help with understanding what is needed.</li>
