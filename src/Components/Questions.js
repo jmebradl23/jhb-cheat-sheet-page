@@ -317,6 +317,23 @@ function Questions() {
 						</Card.Body>
 					</Accordion.Collapse>
 				</Card>
+				<h4 class="question-category">Programming Practices</h4>
+				<Card>
+					<Card.Header>
+						<Accordion.Toggle as={Button} variant="link" eventKey="eventDelegation">
+							<p class="question-title">What is the difference between functional and object-oriented programming?</p>
+						</Accordion.Toggle>
+					</Card.Header>
+					<Accordion.Collapse eventKey="eventDelegation">
+					<Card.Body>
+						<ul className="compare">
+							<li><h6>Pros:</h6></li>
+							<li className="functional compare-item">Functional reasons</li>
+							<li className="oop compare-item">OOP reasons.</li>
+						</ul>
+					</Card.Body>
+					</Accordion.Collapse>
+				</Card>
 				<h4 class="question-category">DOM Manipulation</h4>
 				<Card>
 					<Card.Header>
