@@ -1,6 +1,6 @@
 import React from 'react';
 import './Definitions.css';
-import JS from './JS.css';
+import './JS.css';
 import CssDetails from './CssDetails';
 
 function Css() {
