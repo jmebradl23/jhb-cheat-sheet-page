@@ -321,15 +321,19 @@ function Questions() {
 				<Card>
 					<Card.Header>
 						<Accordion.Toggle as={Button} variant="link" eventKey="eventDelegation">
-							<p class="question-title">What is the difference between functional and object-oriented programming?</p>
+							<p class="question-title">What is the difference between procedural, functional and object-oriented programming?</p>
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey="eventDelegation">
 					<Card.Body>
 						<ul className="compare">
-							<li><h6>Pros:</h6></li>
-							<li className="functional compare-item">Functional reasons</li>
-							<li className="oop compare-item">OOP reasons.</li>
+							<li><h6>Core attributes:</h6></li>
+							<li className="procedural compare-item"> <u>Procedural</u>: A program set up with all variables as well as all methods that operate on any or all of those variables. This leads to copying and pasting lines of code in different areas to use in different places in your application. If one piece of a method is changed the whole app has the chance to break.</li>
+							<li className="functional compare-item"> <u>Functional</u>: Functionals are logical and built for computational computing.</li>
+							<li className="oop compare-item"> <u>Encapsulation</u>: Grouping related variables and methods that operate on them into objects.</li>
+							<li className="oop compare-item"> <u>Abstraction</u>: Hiding some variables and methods from the outside to make the interface simpler and it helps reduce the impact of change outside of the OOP class.</li>
+							<li className="oop compare-item"> <u>Inheritence</u>: Mechanism that allows you to elimiate redundant code. Instead of adding same code to different parts of code, we can define code once in an object and then have other objects inherit that code.</li>
+							<li className="oop compare-item"> <u>Polymorphism</u>: The ability to render different types of objects depending on the properties.</li>
 						</ul>
 					</Card.Body>
 					</Accordion.Collapse>
